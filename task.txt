@@ -1,0 +1,17 @@
+
+task:
+
+Your friend has a shelf full of different cosmetics. Unfortunately, all of them have different PAO* and your friend tends to forget when the time is up.
+You've decided to help her catalogue all of her products by entering the data into a small program that would remind her to throw away all those expired things.
+
+*Pao - Period of Time After Opening, for this task's purpose we assume all PAO's are in months
+
+1. Make a superclass Cosmetic, that has a private (bool type) attribute isOpened, set by default to 0, public: string name, int monthOpened, int yearOpened, int pao. 
+2. Make classes called Cream, which will be a child of Cosmetic. Its constructor should name the cream (e.g. Nivea) and type (e.g. moisturizing).
+3. Make a classes which will be a child of Cosmetic. Name them Mascara, Lipstick and Eyeshadow. 
+Constructor should name them. Additionally: Mascara should have string formula set to thick, Lipstick should have string color set to red, Eyeshadow should have bool inPalette set to 0. 
+4. Cream's pao is 12, mascara - 6, lipstick - 24, eyeshadow - 36.
+5. Make at least one Mascara, Lipstick, Eyeshadow and Cream, name them using constructor, set isOpened to 1 of at least 2 of them. 
+6. Set month and year when those cosmetics were opened.
+7. Check if opened cosmetics are still usable (if date opened + pao > current date)
+

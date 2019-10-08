@@ -1,0 +1,20 @@
+int currentYear = 2019;
+int currentMonth = 10;
+
+void rotten (Cosmetic kosmetyk){
+        int year =0;
+        int month=0;
+        if (((kosmetyk.pao)%12)==0) {
+            year = kosmetyk.yearOpened + (kosmetyk.pao)/12;
+            month = kosmetyk.monthOpened;
+        }else {
+            month = kosmetyk.monthOpened + kosmetyk.pao;
+        }
+
+        if (year <= currentYear){
+            if (month <= currentMonth){
+                cout<<"\n expired: "<<kosmetyk.name;
+            }
+        }
+
+    }
